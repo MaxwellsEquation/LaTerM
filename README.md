@@ -2,6 +2,8 @@
   <img src="logo.svg" alt="LaTerM" width="300" />
 
   Display beautiful mathematical equations directly in your terminal!
+
+  <img src="DEMO.gif" alt="LaTeRM Demo" width="600" />
 </div>
 
 ## Features
@@ -128,7 +130,7 @@ latexAddon.updateConfig({
 ## Related Projects
 
 ### Obsidian Plugin
-The [obsidian-latex-terminal](https://github.com/MaxwellsEquation/LaTerM-dev) plugin uses this library to bring LaTeX rendering to Obsidian's terminal emulator. It's included as a submodule in the `plugins/` directory.
+The [obsidian-latex-terminal](https://github.com/MaxwellsEquation/LaTerM-obsidian) plugin uses this library to bring LaTeX rendering to Obsidian's terminal emulator. It's included as a submodule in the `plugins/` directory.
 
 ## License
 

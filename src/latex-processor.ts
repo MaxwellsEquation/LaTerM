@@ -235,7 +235,7 @@ export class LatexProcessor {
 
 				// Check if expression meets criteria
 				const isSmall = cleanLatex.length < 7
-				const isMathExpression = cleanLatex.length < 150 && (/[+=><^\\]/.test(cleanLatex))
+				const isMathExpression = cleanLatex.length < 150 && (/[+=><^\\_{]/.test(cleanLatex))
 
 				if (!isSmall && !isMathExpression) {
 					// Not a valid LaTeX candidate
