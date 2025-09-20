@@ -132,6 +132,7 @@ Import drawbacks:
 Because terminals often have uses for the LaTeX operator '\\\\' and '\\\\\\\\', these cannot be directly used, and we 
 replace them with a safe macro @nl, and the AI must be told to write with this constraint. An interface is provided for more custom macros, in case there are user specific LaTeX operands that may not work in their environment. 
  
+### Xterm MUST use the DOM renderer for this plugin to function
 
 ## Related Projects
 
