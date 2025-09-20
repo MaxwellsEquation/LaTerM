@@ -1,0 +1,44 @@
+{
+  "name": "xterm-latex",
+  "version": "0.1.0",
+  "description": "LaTeX rendering addon for xterm.js terminals",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "node test/test.js"
+  },
+  "keywords": [
+    "xterm",
+    "terminal",
+    "latex",
+    "math",
+    "katex",
+    "addon"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "@xterm/xterm": "^5.0.0"
+  },
+  "dependencies": {
+    "katex": "^0.16.0"
+  },
+  "devDependencies": {
+    "@types/katex": "^0.16.0",
+    "@xterm/xterm": "^5.5.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/LaTeRM"
+  }
+}
