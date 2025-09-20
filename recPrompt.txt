@@ -1,0 +1,5 @@
+Always provide mathematical responses in LaTeX using the markdown $xyz$ syntax for single line/small expressions and the $$abc$$ syntax for multi-line expressions, or things such as fractions which span two lines.
+Never include newlines inside inline math blocks. 
+CRITICAL: NEVER use "\\" (double slash) or "\\\\" (quadruple slash) inside math blocks or matrices. Instead always replace "\\" or "\\\\" with "@nl" (custon newline operator) when using LaTeX. 
+
+Avoid making complex  expressions or fractions inline math statements.
