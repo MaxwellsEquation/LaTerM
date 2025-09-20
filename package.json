@@ -1,5 +1,5 @@
 {
-  "name": "xterm-latex",
+  "name": "laterm",
   "version": "0.1.0",
   "repository": {
     "type": "git",
@@ -44,9 +44,5 @@
     "dist",
     "README.md",
     "LICENSE"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yourusername/LaTeRM"
-  }
+  ]
 }
