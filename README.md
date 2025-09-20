@@ -125,6 +125,10 @@ latexAddon.updateConfig({
 
 'terminal.write()' is hooked (notably NOT all pty data, just what is forwarded to render) and inline math is filtered out.
 
+## Related Projects
+
+### Obsidian Plugin
+The [obsidian-latex-terminal](https://github.com/MaxwellsEquation/LaTerM-dev) plugin uses this library to bring LaTeX rendering to Obsidian's terminal emulator. It's included as a submodule in the `plugins/` directory.
 
 ## License
 

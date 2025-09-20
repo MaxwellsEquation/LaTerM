@@ -1,0 +1,13 @@
+# Exclude from npm package
+plugins/
+.git/
+.gitmodules
+*.log
+test.html
+logo.svg
+.gitignore
+
+# Development files
+*.tgz
+coverage/
+.nyc_output/

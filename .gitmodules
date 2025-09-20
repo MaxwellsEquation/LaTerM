@@ -1,0 +1,4 @@
+[submodule "plugins/obsidian-latex-terminal"]
+	path = plugins/obsidian-latex-terminal
+	url = https://github.com/MaxwellsEquation/LaTerM-dev.git
+	branch = use-laterm-package
