@@ -1,16 +1,16 @@
-# xterm-latex (LaTerM)
+<div align="center">
+  <img src="logo.svg" alt="LaTerM" width="300" />
 
-LaTeX rendering addon for xterm.js terminals. Display beautiful mathematical equations directly in your terminal!
+  Display beautiful mathematical equations directly in your terminal!
+</div>
 
 ## Features
 
-- 🚀 **Zero-config** - Just load the addon and LaTeX works
-- 📐 **Inline & Display Math** - Support for both `$...$` and `$$...$$`
-- 🎯 **Smart Detection** - Distinguishes between LaTeX and shell variables
-- 🔧 **PTY-Safe Macros** - Use `@nl` instead of `\\` for matrices
-- 🎨 **Theme Aware** - Automatically matches terminal colors
-- ⚡ **High Performance** - Efficient caching and lazy rendering
-- 📦 **Tiny Size** - Minimal overhead with only essential dependencies
+- **Zero-config** - Just load the addon and LaTeX works
+- **Agent compatible** - Made for use with CLI AI tools
+- **Inline & Display Math** - Support for both `$...$` and `$$...$$`
+- **Smart Detection** - Distinguishes between LaTeX and shell variables
+- **Theme Aware** - Automatically matches terminal colors
 
 ## Installation
 
@@ -30,8 +30,7 @@ const latexAddon = new LatexAddon()
 terminal.loadAddon(latexAddon)
 terminal.open(document.getElementById('terminal'))
 
-// That's it! LaTeX now works
-terminal.write('The equation $E = mc^2$ is famous.\n')
+terminal.write('The equation $E = mc^2$ is not the whole story\n')
 ```
 
 ## Examples
@@ -58,9 +57,6 @@ terminal.write('$$\\begin{bmatrix} 1 & 2 @nl 3 & 4 \\end{bmatrix}$$\n')
 const latexAddon = new LatexAddon({
   macros: {
     '@nl': '\\\\',      // Row separator (necessary)
-    '@inf': '\\infty',  // Infinity symbol
-    '@del': '\\nabla',  // Gradient operator
-    '@int': '\\int',    // Integral (no backslash needed)
   }
 })
 
@@ -127,33 +123,8 @@ latexAddon.updateConfig({
 
 ## How It Works
 
-1. **Text Processing**: Intercepts `terminal.write()` calls to find LaTeX patterns
-2. **Placeholder Insertion**: Replaces LaTeX with compact placeholders (4 chars)
-3. **Overlay Rendering**: Creates DOM overlays with KaTeX-rendered equations
-4. **Position Tracking**: Updates overlay positions on scroll/resize
+'terminal.write()' is hooked (notably NOT all pty data, just what is forwarded to render) and inline math is filtered out.
 
-## Why @nl Macro?
-
-Terminal input often struggles with backslashes:
-- `\\` becomes `\` (shell escaping)
-- Different shells handle this differently
-- AI assistants have trouble outputting the right number of backslashes
-
-The `@nl` macro solves this by providing a PTY-safe alternative that always works.
-
-## Browser Compatibility
-
-Works in any modern browser that supports:
-- ES2020
-- DOM manipulation
-- CSS positioning
-
-## Performance
-
-- Equations are cached after first render
-- Overlays update only for visible content
-- Scroll updates are debounced
-- Resize triggers smart re-layout
 
 ## License
 
