@@ -1,6 +1,14 @@
 {
   "name": "xterm-latex",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaxwellsEquation/LaTerM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaxwellsEquation/LaTerM/issues"
+  },
+  "homepage": "https://github.com/MaxwellsEquation/LaTerM#readme",
   "description": "LaTeX rendering addon for xterm.js terminals",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

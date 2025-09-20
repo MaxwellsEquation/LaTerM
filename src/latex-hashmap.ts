@@ -1,6 +1,6 @@
 /**
  * LatexHashMap - Manages hash generation and LaTeX expression storage
- * Uses self-identifying placeholders with «evm[hash]» format
+ * Uses self-identifying placeholders with \uE000XXX format (4 chars total)
  */
 
 export interface LatexEntry {
@@ -72,8 +72,8 @@ export class LatexHashMap {
 		const padding = '\u00A0'.repeat(actualWidth - marker.length)
 		const result = marker + padding
 		
-		// Debug logging
-		console.log(`[LaTerM DEBUG] formatPlaceholder: hash=${hash}, width=${width}, actualWidth=${actualWidth}, padding=${padding.length} non-breaking spaces`)
+		// Debug logging (commented out - uncomment for debugging)
+		// console.log(`[LaTerM DEBUG] formatPlaceholder: hash=${hash}, width=${width}, actualWidth=${actualWidth}, padding=${padding.length} non-breaking spaces`)
 		
 		return result
 	}

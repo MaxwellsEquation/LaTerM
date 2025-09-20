@@ -57,7 +57,7 @@ terminal.write('$$\\begin{bmatrix} 1 & 2 @nl 3 & 4 \\end{bmatrix}$$\n')
 ```javascript
 const latexAddon = new LatexAddon({
   macros: {
-    '@nl': '\\\\',      // Row separator (default)
+    '@nl': '\\\\',      // Row separator (necessary)
     '@inf': '\\infty',  // Infinity symbol
     '@del': '\\nabla',  // Gradient operator
     '@int': '\\int',    // Integral (no backslash needed)
