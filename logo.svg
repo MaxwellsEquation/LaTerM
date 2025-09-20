@@ -1,0 +1,43 @@
+<svg width="180" height="60" viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Computer+Modern+Serif&amp;display=swap');
+      .laterm-logo {
+        font-family: 'Computer Modern Serif', 'CMU Serif', 'Latin Modern Roman', 'Times New Roman', serif;
+        font-size: 48px;
+        fill: #000000;
+      }
+      .small-a {
+        font-size: 34px;
+        font-variant: small-caps;
+      }
+      .lower-e {
+        font-size: 46px;
+      }
+      .lower-m {
+        font-size: 44px;
+      }
+    </style>
+  </defs>
+
+  <!-- LaTerM logo with LaTeX-style positioning -->
+  <g class="laterm-logo">
+    <!-- L -->
+    <text x="20" y="40">L</text>
+
+    <!-- a (raised and smaller) -->
+    <text x="34" y="32" class="small-a">A</text>
+
+    <!-- T -->
+    <text x="58" y="40">T</text>
+
+    <!-- e (lowered) -->
+    <text x="80" y="45" class="lower-e">E</text>
+
+    <!-- r -->
+    <text x="102" y="40">R</text>
+
+    <!-- M (slightly lowered) -->
+    <text x="124" y="44" class="lower-m">M</text>
+  </g>
+</svg>
